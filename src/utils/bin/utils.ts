@@ -67,20 +67,22 @@ export const donate = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
   return `
-███╗   ███╗██╗  ██╗████████╗████████╗███████╗██████╗
-████╗ ████║██║  ██║╚══██╔══╝╚══██╔══╝╚════██║╚════██╗
-██╔████╔██║███████║   ██║      ██║       ██╔╝ █████╔╝
-██║╚██╔╝██║╚════██║   ██║      ██║      ██╔╝ ██╔═══╝
-██║ ╚═╝ ██║     ██║   ██║      ██║      ██║  ███████╗
-╚═╝     ╚═╝     ╚═╝   ╚═╝      ╚═╝      ╚═╝  ╚══════╝ v${packageJson.version}
+                                                                   
+  eeeee e   e  e   e eeeee e   e  e   e  e eeeee eeeee  e   e  eeeee 
+  8   " 8   8  8   8 8   8 8   8  8   8  8 8  88 8   8  8   8  8   " 
+  8eeee 8eee8e 8e  8 8e  8 8eee8e 8e  8  8 8   8 8eee8e 8eee8e 8eeee 
+     88 88   8 88  8 88  8 88   8 88  8  8 8   8 88   8 88   8    88 
+  8ee88 88   8 88ee8 88  8 88   8 88ee8ee8 8eee8 88   8 88   8 8ee88  v${packageJson.version}
 
-Type 'help' to see list of available commands.
 
 --
-The project is open-source 🎉 type 'repo' to check out the repository.
 
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
 --
 `;
+};
+
+export const contact = async (args: string[]): Promise<string> => {
+  setTimeout(function() {window.alert('Cease your investigation.')}, 4000);
+  return 'Connecting...';
+  
 };
